@@ -12,11 +12,11 @@ http.get({
     console.log('STATUS: ' + response.statusCode);
     console.log('HEADERS: ' + response.headers);
     
-    response.on('data', function() {
+    response.on('data', function(data) {
         body += data;
     });
     
-    response.on('end'), function() {
-       console.log('Resposta: ' + body); 
+    response.on('end', function() {
+       console.log('Resposta: ', body); 
     });
 });
