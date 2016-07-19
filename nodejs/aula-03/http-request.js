@@ -14,7 +14,13 @@ function callback(res) {
     let data = '';
     
     res.setEncoding('utf8');
-    res.on('data', (chuck) => {
+    res.on('data', (chuck) => {const req = http.request(options, callback);
+
+req.on('error', (e) => {
+    console.log('ERRO: ' + e.message);
+});
+
+req.end();
         data += chuck;
     });
     res.on('end', () => {
