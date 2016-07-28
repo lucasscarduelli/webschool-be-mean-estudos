@@ -1,3 +1,3 @@
 require('./config');
 
-const Schema = require('./schema07');
+const Schema = require('./model-poke-delete');
