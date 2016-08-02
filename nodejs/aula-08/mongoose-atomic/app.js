@@ -17,7 +17,7 @@ const data = {
 const mod = { attack : 51 };
 const options = { multi : true };
 
-CRUD.retrieve(query);
-//CRUD.create(data);
+//CRUD.retrieve(query);
+CRUD.create(data);
 //CRUD.update(query, mod, options);
 //CRUD.delete(query);
