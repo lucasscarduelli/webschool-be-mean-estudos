@@ -1,0 +1,14 @@
+{
+  "name": "aula-09-mocha",
+  "version": "0.0.1",
+  "description": "",
+  "main": "doc_ex_mocha.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lucas Boeing Scarduelli",
+  "license": "WTFPL",
+  "dependencies": {
+    "assert": "^1.4.1"
+  }
+}
