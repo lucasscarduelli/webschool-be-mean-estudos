@@ -1,0 +1,17 @@
+{
+  "name": "express-req",
+  "version": "0.0.1",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lucas Boeing Scarduelli",
+  "license": "WTFPL",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "formidable": "^1.0.17",
+    "xml": "^1.0.1"
+  }
+}
