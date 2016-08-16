@@ -1,0 +1,15 @@
+{
+  "name": "router",
+  "version": "0.0.1",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lucas Boeing Scarduelli",
+  "license": "WTFPL",
+  "dependencies": {
+    "express": "^4.14.0",
+    "mongoose": "^4.5.9"
+  }
+}
