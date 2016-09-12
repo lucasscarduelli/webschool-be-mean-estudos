@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt" data-ng-app="BeMEAN">
+    <head>
+        <meta charset="utf-8">
+        <title>Be MEAN</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+    </head>
+    <style>
+        html body select {
+            display: inline-block;
+        }
+        .wrapper {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .ng-valid {
+            background-color: #B4E5C4;
+        }
+        .invalid {
+            background-color: red;
+        }
+    </style>
+    <body data-ng-controller="UserController as User">
+        <section class="row wrapper">
+            <h1 data-ng-class="User.tituloStyle">{{ User.titulo }}</h1>
+            
+            <div class="col s12">
+                <form name="searchForm">
+                    <div>
+                        <label>Busca</label>
+                        <input type="text" name="search" ng-model-options="{ updateOn: 'blur default', debounce: { default:3000, blur:0 }}" data-ng-model="search" placeholder="Busca">
+                    </div>
+                </form>
+            </div>
+            <article>
+                <p>
+                    Busca: {{search}}
+                </p>
+            </article>
+        </section>
+        <script src="angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-animate.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-messages.js"></script>
+
+        <script>
+            
+            angular.module('BeMEAN', ['ngAnimate','ngMessages'])
+            .controller('UserController', UserController);
+            
+            function UserController() {
+                var vm = this;
+                vm.titulo = 'Be MEAN';
+
+            };
+            
+        </script>
+    </body>
+</html>
