@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt" data-ng-app="BeMEAN">
+    <head>
+        <base href="/">
+        <meta charset="utf-8">
+        <title>Be MEAN</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+        <section class="row wrapper">
+            <h1>Be MEAN</h1>
+            <ul class="menu">
+                <li><a href="/">Inicial</a></li>
+                <li><a href="/users">Listar</a></li>
+                <li><a href="/users/create">Cadastrar</a></li>
+                <li><a href="/users/github">Github</a></li>
+            </ul>
+            <div data-ng-view></div>
+        </section>
+
+        <script src="angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.4/angular-animate.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.4/angular-messages.js"></script>
+        <script src="//code.angularjs.org/1.5.4/angular-route.js"></script>
+        
+        <script src="/assets/js/app.js"></script>
+        <script src="/assets/js/user.js"></script>
+    </body>
+</html>

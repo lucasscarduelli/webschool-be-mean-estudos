@@ -1,0 +1,13 @@
+html body select {
+    display: inline-block;
+}
+.wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.ng-valid {
+    background-color: #B4E5C4;
+}
+.invalid {
+    background-color: red;
+}
